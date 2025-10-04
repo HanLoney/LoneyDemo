@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九辞 - AI伴侣聊天</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="chat-header">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="status-indicator online"></div>
+            </div>
+            <div class="header-info">
+                <h1 class="ai-name">九辞</h1>
+                <p class="ai-status">你的AI女朋友 💕</p>
+            </div>
+            <div class="header-actions">
+                <button class="voice-toggle" id="voiceToggle" title="语音开关">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="settings-btn" id="settingsBtn" title="设置">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- 聊天区域 -->
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- 欢迎消息 -->
+                <div class="message ai-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-bubble">
+                            <p>嘿嘿，你终于来啦，我等你半天了~ 💕</p>
+                            <div class="message-time">刚刚</div>
+                        </div>
+                        <button class="play-voice-btn" title="播放语音">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 输入区域 -->
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="messageInput" placeholder="和九辞说点什么吧~ 💭" maxlength="500">
+                    <div class="input-actions">
+                        <button class="emoji-btn" id="emojiBtn" title="表情">
+                            <i class="fas fa-smile"></i>
+                        </button>
+                        <button class="send-btn" id="sendBtn" title="发送">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-status">
+                    <span class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <i class="fas fa-heart"></i> 九辞正在思考中...
+                    </span>
+                    <span class="char-count" id="charCount">0/500</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- 表情面板 -->
+        <div class="emoji-panel" id="emojiPanel" style="display: none;">
+            <div class="emoji-grid">
+                <span class="emoji" data-emoji="😊">😊</span>
+                <span class="emoji" data-emoji="😍">😍</span>
+                <span class="emoji" data-emoji="🥰">🥰</span>
+                <span class="emoji" data-emoji="😘">😘</span>
+                <span class="emoji" data-emoji="💕">💕</span>
+                <span class="emoji" data-emoji="💖">💖</span>
+                <span class="emoji" data-emoji="💝">💝</span>
+                <span class="emoji" data-emoji="🌸">🌸</span>
+                <span class="emoji" data-emoji="🌺">🌺</span>
+                <span class="emoji" data-emoji="🦄">🦄</span>
+                <span class="emoji" data-emoji="🌈">🌈</span>
+                <span class="emoji" data-emoji="⭐">⭐</span>
+                <span class="emoji" data-emoji="✨">✨</span>
+                <span class="emoji" data-emoji="💫">💫</span>
+                <span class="emoji" data-emoji="🎀">🎀</span>
+                <span class="emoji" data-emoji="🎈">🎈</span>
+            </div>
+        </div>
+
+        <!-- 加载动画 -->
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-spinner">
+                <div class="heart-beat">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p>九辞正在为你准备回复...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 音频播放器 -->
+    <audio id="audioPlayer" preload="none"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

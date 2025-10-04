@@ -1,0 +1,32 @@
+{
+  "emotions": {
+    "happiness": 0.6066,
+    "sadness": 0.2,
+    "anger": 0.1,
+    "fear": 0.1,
+    "surprise": 0.3533,
+    "trust": 0.6533,
+    "anticipation": 0.4,
+    "disgust": 0.1
+  },
+  "intensity": 0.565,
+  "stability": 0.7,
+  "last_update": "2025-10-04T18:48:35.421973",
+  "emotion_history": [
+    {
+      "timestamp": "2025-10-04T18:48:35.421949",
+      "changes": {
+        "happiness": 0.16400000000000003,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.08200000000000002,
+        "trust": 0.08200000000000002,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.1,
+      "result_summary": "信任(0.65) - 适中"
+    }
+  ]
+}

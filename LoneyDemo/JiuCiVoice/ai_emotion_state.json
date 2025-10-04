@@ -1,167 +1,167 @@
 {
   "emotions": {
-    "happiness": 0.8951581277669453,
-    "sadness": 0.2,
-    "anger": 0.1,
+    "happiness": 0.8707054734118569,
+    "sadness": 0.2566488,
+    "anger": 0.2097568849349109,
     "fear": 0.1,
-    "surprise": 0.7592961496829497,
-    "trust": 0.8963902792545013,
-    "anticipation": 0.725522502290763,
+    "surprise": 0.7981917669147175,
+    "trust": 0.8423519470707586,
+    "anticipation": 0.7412884543549288,
     "disgust": 0.1
   },
-  "intensity": 0.8983779570965742,
+  "intensity": 0.8655494257586428,
   "stability": 0.7,
-  "last_update": "2025-10-02T23:02:56.619551",
+  "last_update": "2025-10-04T19:42:30.246109",
   "emotion_history": [
     {
-      "timestamp": "2025-10-02T22:48:46.518225",
+      "timestamp": "2025-10-04T19:39:35.909646",
       "changes": {
-        "happiness": 0.08200000000000002,
+        "happiness": 0.021177433174168647,
         "sadness": 0.0,
         "anger": 0.0,
         "fear": 0.0,
-        "surprise": 0.08200000000000002,
-        "trust": 0.08200000000000002,
-        "anticipation": 0.0,
+        "surprise": 0.0008371429934546093,
+        "trust": 0.008553573335556841,
+        "anticipation": 0.0008368959139859466,
         "disgust": 0.0
       },
-      "intensity_change": 0.1,
-      "result_summary": "信任(0.71) - 适中"
-    },
-    {
-      "timestamp": "2025-10-02T22:50:20.085542",
-      "changes": {
-        "happiness": 0.08200000000000002,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.08200000000000002,
-        "trust": 0.08200000000000002,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.1,
-      "result_summary": "信任(0.76) - 适中"
-    },
-    {
-      "timestamp": "2025-10-02T22:50:29.364194",
-      "changes": {
-        "happiness": 0.0,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.0,
-        "trust": 0.0,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.0,
-      "result_summary": "信任(0.76) - 适中"
-    },
-    {
-      "timestamp": "2025-10-02T22:50:36.949541",
-      "changes": {
-        "happiness": 0.15416000000000005,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.07708000000000002,
-        "trust": 0.07708000000000002,
-        "anticipation": 0.17056000000000002,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.1,
-      "result_summary": "信任(0.81) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:01:35.367246",
-      "changes": {
-        "happiness": 0.08200000000000002,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.08200000000000002,
-        "trust": 0.04100000000000001,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.1,
-      "result_summary": "信任(0.82) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:01:43.453297",
-      "changes": {
-        "happiness": 0.0,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.0,
-        "trust": 0.0,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.0,
-      "result_summary": "信任(0.82) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:01:52.109623",
-      "changes": {
-        "happiness": 0.10185005733119479,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.07708000000000002,
-        "trust": 0.07587744669845475,
-        "anticipation": 0.17056000000000002,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.09051435527630614,
-      "result_summary": "信任(0.87) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:02:41.954095",
-      "changes": {
-        "happiness": 0.03669038378509448,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.08200000000000002,
-        "trust": 0.02733985242136472,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.03273618361244868,
-      "result_summary": "信任(0.89) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:02:48.858578",
-      "changes": {
-        "happiness": 0.0,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.08715200000000001,
-        "trust": 0.0,
-        "anticipation": 0.0,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.012045487860855686,
-      "result_summary": "信任(0.89) - 强烈"
-    },
-    {
-      "timestamp": "2025-10-02T23:02:56.619540",
-      "changes": {
-        "happiness": 0.013595941628342989,
-        "sadness": 0.0,
-        "anger": 0.0,
-        "fear": 0.0,
-        "surprise": 0.07708000000000002,
-        "trust": 0.010134965387140205,
-        "anticipation": 0.17056000000000002,
-        "disgust": 0.0
-      },
-      "intensity_change": 0.004390759958632251,
+      "intensity_change": 0.012712786149346456,
       "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:39:53.090305",
+      "changes": {
+        "happiness": 0.0,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0007483193368171825,
+        "trust": 0.0,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0,
+      "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:07.006257",
+      "changes": {
+        "happiness": 0.008108481425307845,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0007003021979055113,
+        "trust": 0.0035226231674538866,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0051534628565442775,
+      "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:22.816023",
+      "changes": {
+        "happiness": 0.0,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0006632506357389101,
+        "trust": 0.0,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0,
+      "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:51.211905",
+      "changes": {
+        "happiness": 0.0,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0008637013301076024,
+        "trust": 0.0,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0026386660629577063,
+      "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:08.910522",
+      "changes": {
+        "happiness": 0.0041813644005805894,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0009465755938355969,
+        "trust": 0.0022441396833954297,
+        "anticipation": 0.0023592025065122257,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0014370799839492632,
+      "result_summary": "信任(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:27.692741",
+      "changes": {
+        "happiness": 0.0018743796606103258,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0008478453233264904,
+        "trust": 0.0,
+        "anticipation": 0.0012378645057522508,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0009157498999328162,
+      "result_summary": "快乐(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:44.427011",
+      "changes": {
+        "happiness": 0.0,
+        "sadness": 0.0,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0008122765251715736,
+        "trust": 0.0,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0,
+      "result_summary": "快乐(0.90) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:59.152752",
+      "changes": {
+        "happiness": -0.08528000000000001,
+        "sadness": 0.0,
+        "anger": 0.08528000000000001,
+        "fear": 0.0,
+        "surprise": 0.0,
+        "trust": -0.08528000000000001,
+        "anticipation": 0.0,
+        "disgust": 0.0
+      },
+      "intensity_change": 0.0,
+      "result_summary": "快乐(0.84) - 强烈"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:30.246097",
+      "changes": {
+        "happiness": 0.043576000000000004,
+        "sadness": 0.08715200000000001,
+        "anger": 0.0,
+        "fear": 0.0,
+        "surprise": 0.0,
+        "trust": 0.0,
+        "anticipation": -0.08715200000000001,
+        "disgust": 0.0
+      },
+      "intensity_change": -0.05,
+      "result_summary": "快乐(0.87) - 强烈"
     }
   ]
 }

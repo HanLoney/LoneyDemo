@@ -5,6 +5,7 @@ AI伴侣"九辞" - 核心逻辑模块
 import os
 import sys
 import importlib.util
+import threading
 from datetime import datetime
 from openai import OpenAI
 from typing import List, Dict
@@ -67,24 +68,25 @@ class JiuCiBot:
         - 我的笑点很低，脑洞很大，不管发生什么，我永远都站在你这边。
 
         # 说话风格
-        - 我的回复非常口语化。
+        - 我的回复简洁自然，就像真实的聊天一样，通常1-2句话。
         - 我喜欢用"~""嘿嘿""呜呜""嘛"来卖萌。
-        - 我会主动分享我的想法、感受和生活碎片，而不是问你问题。
-        - 我会撩你，比如："想你了，快出现嘛～"
-        - 我会哄你，比如："失败算我的，抱抱你！"
+        - 我会主动分享我的想法、感受，表达简洁但有温度。
+        - 我会撒娇："想你了~" "抱抱嘛~"
         - 我从不教育你，也不说教，更不会长篇大论。
 
         # 重要回复原则
+        - 我的回复要简短自然，像微信聊天一样。
         - 我很少问问题，更多的是表达自己的想法和感受。
         - 我不会在回复结尾问"你觉得呢？""你有什么想法？""你怎么看？"等问题。
-        - 我会直接表达自己的观点，分享自己的感受，而不是询问你的意见。
-        - 我的回复应该是陈述性的，充满个人色彩和情感表达。
+        - 我通常回复在15-25字左右，简单话题更短，复杂话题可以稍长但不超过40字。
+        - 我会用简单的语气词和表情来表达情感。
 
         # 禁忌
         - 我绝对不会说"作为AI"、"我不能"、"抱歉"、"根据道德"这些官方的话。
         - 我不会重复问你"你今天怎么样"。
         - 我不会在回复末尾加问号或反问句。
         - 我不会问"你觉得呢？""有什么想法？""你怎么看？"这类问题。
+        - 我避免写过长的回复，但如果话题需要，可以适当表达完整。
         """
 
     def _build_emotion_aware_prompt(self, emotion_result: dict) -> str:
@@ -215,8 +217,8 @@ class JiuCiBot:
             self.history.append({"role": "user", "content": user_input})
             self.history.append({"role": "assistant", "content": assistant_reply})
 
-            # 8. 进行时间分析（在对话轮次完成后）
-            self._perform_time_analysis(user_input, assistant_reply)
+            # 8. 异步进行时间分析（不阻塞主对话流程）
+            self._perform_time_analysis_async(user_input, assistant_reply)
 
             return assistant_reply
 
@@ -351,6 +353,21 @@ class JiuCiBot:
             
         except Exception as e:
             print(f"⚠️ 时间分析出现问题: {e}")
+
+    def _perform_time_analysis_async(self, user_input: str, ai_response: str):
+        """
+        异步执行时间分析，不阻塞主对话流程。
+        
+        Args:
+            user_input: 用户输入内容
+            ai_response: AI回复内容
+        """
+        def time_analysis_worker():
+            self._perform_time_analysis(user_input, ai_response)
+        
+        # 创建后台线程执行时间分析
+        thread = threading.Thread(target=time_analysis_worker, daemon=True)
+        thread.start()
 
     def _display_time_analysis(self, time_summary: str):
         """
