@@ -1,18 +1,23 @@
-[README.md](https://github.com/user-attachments/files/22662381/README.md)
-# LoneyDemo - AI工具集合
+# LoneyDemo - 九辞AI伴侣
 
-一个集成了多种AI功能的工具集合，包含语音合成、情感分析、时间管理等多个实用工具。
+一个现代化的AI伴侣系统，集成了智能对话、情感分析、语音合成等功能，为用户提供温暖贴心的AI陪伴体验。
 
 ## 📁 项目结构
 
 ```
 LoneyDemo/
-├── JiuCiVoice/          # 🎵 九辞语音伴侣 - 带语音合成的AI对话
-├── JiuCi/               # 🤖 九辞AI伴侣 - 纯文本AI对话
-├── AIEmoTool/           # 😊 AI情感系统 - 高级情感分析与表达
-├── EmoTool/             # 📊 情感分析工具 - 基础情感识别
-├── TimeTool/            # ⏰ 时间分析工具 - 智能内容总结
-└── README.md            # 📖 项目总览 (本文件)
+├── Web/                 # 🌐 Web版九辞AI伴侣
+├── core/                # 🧠 核心服务模块
+│   ├── chat/           # 💬 对话服务
+│   ├── emotion/        # 😊 情感分析
+│   └── voice/          # 🎵 语音服务
+├── shared/             # 🔧 共享组件
+│   ├── models/         # 📊 数据模型
+│   ├── utils/          # 🛠️ 工具函数
+│   └── interfaces/     # 🔌 服务接口
+├── config/             # ⚙️ 配置文件
+├── data/               # 📁 数据存储
+└── README.md           # 📖 项目说明
 ```
 
 ## 🚀 快速开始

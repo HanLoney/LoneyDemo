@@ -28,15 +28,7 @@ def check_dependencies():
             print("❌ 依赖安装失败")
             return False
 
-def check_jiuci_voice():
-    """检查JiuCiVoice项目是否存在"""
-    jiuci_voice_path = Path(__file__).parent / ".." / "LoneyDemo" / "JiuCiVoice"
-    if jiuci_voice_path.exists():
-        print(f"✅ JiuCiVoice项目路径: {jiuci_voice_path.resolve()}")
-        return True
-    else:
-        print(f"❌ JiuCiVoice项目不存在: {jiuci_voice_path.resolve()}")
-        return False
+
 
 def start_web_server():
     """启动Web服务器"""
@@ -93,12 +85,6 @@ def main():
     # 检查依赖
     if not check_dependencies():
         print("❌ 依赖检查失败，请手动安装依赖")
-        return
-    
-    # 检查JiuCiVoice项目
-    if not check_jiuci_voice():
-        print("❌ JiuCiVoice项目检查失败")
-        print("💡 请确保在正确的目录结构下运行此脚本")
         return
     
     # 启动Web服务器
