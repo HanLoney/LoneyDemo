@@ -1,0 +1,35 @@
+2025-10-05 18:35:37,043 - core.chat.llm_client - INFO - LLM客户端已初始化 - 模型: gpt-3.5-turbo
+2025-10-05 18:36:28,851 - core.chat.llm_client - INFO - LLM客户端已初始化 - 模型: qwen-flash
+2025-10-05 18:36:40,050 - core.chat.chat_manager - INFO - 创建新对话会话: session_default_20251005_183640
+2025-10-05 18:36:40,050 - core.chat.chat_manager - INFO - 对话管理器已初始化 - 用户: default
+2025-10-05 18:36:40,254 - core.emotion.emotion_service - INFO - 情感服务已初始化 - 用户: default
+2025-10-05 18:36:40,597 - core.chat.llm_client - INFO - LLM客户端已初始化 - 模型: qwen-flash
+2025-10-05 18:36:40,598 - core.chat.chat_service - INFO - 对话服务已初始化 - 用户: default
+2025-10-05 18:36:40,600 - core.emotion.emotion_analyzer - ERROR - AI情感影响分析失败: 'coroutine' object has no attribute 'primary_emotion'
+2025-10-05 18:36:40,603 - core.emotion.emotion_service - ERROR - 更新AI情感状态失败: 'coroutine' object has no attribute 'primary_emotion'
+2025-10-05 18:36:40,604 - core.chat.chat_service - ERROR - 构建情感提示失败: 'coroutine' object has no attribute 'get'
+2025-10-05 18:36:42,233 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-05 18:36:42,243 - core.emotion.emotion_manager - ERROR - 应用自然衰减失败: 'EmotionState' object has no attribute 'last_update'
+2025-10-05 18:36:42,246 - core.chat.chat_service - ERROR - 对话处理失败: 'EmotionService' object has no attribute 'get_emotion_state'
+2025-10-05 18:36:56,455 - core.chat.chat_manager - INFO - 创建新对话会话: session_default_20251005_183656
+2025-10-05 18:36:56,456 - core.chat.chat_manager - INFO - 对话管理器已初始化 - 用户: default
+2025-10-05 18:36:56,649 - core.emotion.emotion_service - INFO - 情感服务已初始化 - 用户: default
+2025-10-05 18:36:56,974 - core.chat.llm_client - INFO - LLM客户端已初始化 - 模型: qwen-flash
+2025-10-05 18:36:56,975 - core.chat.chat_service - INFO - 对话服务已初始化 - 用户: default
+2025-10-05 18:36:56,975 - core.emotion.emotion_analyzer - ERROR - AI情感影响分析失败: 'coroutine' object has no attribute 'primary_emotion'
+2025-10-05 18:36:56,977 - core.emotion.emotion_service - ERROR - 更新AI情感状态失败: 'coroutine' object has no attribute 'primary_emotion'
+2025-10-05 18:36:56,978 - core.chat.chat_service - ERROR - 构建情感提示失败: 'coroutine' object has no attribute 'get'
+2025-10-05 18:36:58,795 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-05 18:36:58,800 - core.emotion.emotion_manager - ERROR - 应用自然衰减失败: 'EmotionState' object has no attribute 'last_update'
+2025-10-05 18:36:58,802 - core.chat.chat_service - ERROR - 对话处理失败: 'EmotionService' object has no attribute 'get_emotion_state'
+2025-10-05 18:40:35,458 - core.chat.chat_manager - INFO - 创建新对话会话: session_default_20251005_184035
+2025-10-05 18:40:35,459 - core.chat.chat_manager - INFO - 对话管理器已初始化 - 用户: default
+2025-10-05 18:40:35,670 - core.emotion.emotion_service - INFO - 情感服务已初始化 - 用户: default
+2025-10-05 18:40:35,993 - core.chat.llm_client - INFO - LLM客户端已初始化 - 模型: qwen-flash
+2025-10-05 18:40:35,994 - core.chat.chat_service - INFO - 对话服务已初始化 - 用户: default
+2025-10-05 18:40:37,270 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-05 18:40:37,275 - core.emotion.emotion_service - ERROR - 更新AI情感状态失败: 'coroutine' object has no attribute 'primary_emotion'
+2025-10-05 18:40:37,276 - core.chat.chat_service - ERROR - 构建情感提示失败: 'coroutine' object has no attribute 'get'
+2025-10-05 18:40:38,537 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-05 18:40:38,539 - core.chat.chat_service - INFO - 对话处理完成 - 耗时: 2.54s
+2025-10-05 19:14:48,385 - tts_client - INFO - TTS客户端已初始化

@@ -1,0 +1,151 @@
+# JiuCi AI伴侣 - 配置文件模板
+# 复制此文件为 config.yaml 并填入你的配置
+
+# 聊天服务配置
+chat:
+  # 聊天模型提供商 (openai, azure, local)
+  provider: "openai"
+  
+  # OpenAI配置
+  openai:
+    api_key: "your_openai_api_key_here"
+    model: "gpt-3.5-turbo"
+    base_url: "https://api.openai.com/v1"
+    max_tokens: 2000
+    temperature: 0.7
+  
+  # Azure配置
+  azure:
+    api_key: "your_azure_api_key_here"
+    endpoint: "https://your-resource.openai.azure.com/"
+    deployment_name: "your_deployment_name"
+    api_version: "2023-05-15"
+  
+  # 本地模型配置
+  local:
+    model_path: "path/to/your/local/model"
+    device: "cpu"  # cpu, cuda, mps
+
+# 语音服务配置
+voice:
+  # 语音服务提供商 (volcengine, azure, edge)
+  provider: "volcengine"
+  
+  # 火山引擎TTS配置
+  volcengine:
+    app_id: "your_volcengine_app_id"
+    access_token: "your_volcengine_access_token"
+    cluster: "volcano_tts"
+    voice_type: "BV001_streaming"
+    encoding: "wav"
+    sample_rate: 24000
+    
+    # 语音配置预设
+    voices:
+      sweet:
+        voice_type: "BV001_streaming"
+        speed_ratio: 1.0
+        volume_ratio: 1.0
+        pitch_ratio: 1.0
+      
+      gentle:
+        voice_type: "BV002_streaming"
+        speed_ratio: 0.9
+        volume_ratio: 0.8
+        pitch_ratio: 0.9
+      
+      lively:
+        voice_type: "BV003_streaming"
+        speed_ratio: 1.1
+        volume_ratio: 1.2
+        pitch_ratio: 1.1
+      
+      mature:
+        voice_type: "BV004_streaming"
+        speed_ratio: 0.8
+        volume_ratio: 0.9
+        pitch_ratio: 0.8
+  
+  # Azure语音配置
+  azure:
+    subscription_key: "your_azure_speech_key"
+    region: "your_azure_region"
+    voice_name: "zh-CN-XiaoxiaoNeural"
+  
+  # Edge TTS配置
+  edge:
+    voice_name: "zh-CN-XiaoxiaoNeural"
+    rate: "+0%"
+    volume: "+0%"
+    pitch: "+0Hz"
+
+# 情感分析配置
+emotion:
+  # 情感分析模型
+  model_name: "hfl/chinese-roberta-wwm-ext"
+  device: "cpu"  # cpu, cuda, mps
+  
+  # 情感状态配置
+  states:
+    happy: ["开心", "快乐", "兴奋", "愉悦"]
+    sad: ["难过", "伤心", "沮丧", "失落"]
+    angry: ["生气", "愤怒", "恼火", "烦躁"]
+    surprised: ["惊讶", "震惊", "意外", "吃惊"]
+    neutral: ["平静", "中性", "普通", "一般"]
+
+# Web服务配置
+web:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  
+  # 音频文件配置
+  audio:
+    max_files: 100  # 最大缓存音频文件数
+    cleanup_interval: 3600  # 清理间隔（秒）
+    max_file_age: 7200  # 文件最大保存时间（秒）
+
+# 日志配置
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"
+  
+  # 文件日志
+  file:
+    enabled: true
+    path: "logs/jiuci.log"
+    rotation: "1 day"
+    retention: "7 days"
+  
+  # 控制台日志
+  console:
+    enabled: true
+    colorize: true
+
+# 缓存配置
+cache:
+  # 内存缓存
+  memory:
+    max_size: 1000
+    ttl: 3600  # 生存时间（秒）
+  
+  # 文件缓存
+  file:
+    enabled: false
+    path: "cache/"
+    max_size: "100MB"
+
+# 安全配置
+security:
+  # API密钥（可选）
+  api_key: ""
+  
+  # 允许的来源
+  allowed_origins:
+    - "http://localhost:5000"
+    - "http://127.0.0.1:5000"
+  
+  # 请求限制
+  rate_limit:
+    enabled: false
+    requests_per_minute: 60

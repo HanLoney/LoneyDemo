@@ -26,11 +26,154 @@
                 <button class="voice-toggle" id="voiceToggle" title="语音开关">
                     <i class="fas fa-volume-up"></i>
                 </button>
+                <button class="dev-mode-toggle" id="devModeToggle" title="开发者模式">
+                    <i class="fas fa-code"></i>
+                </button>
                 <button class="settings-btn" id="settingsBtn" title="设置">
                     <i class="fas fa-cog"></i>
                 </button>
             </div>
         </header>
+
+        <!-- 开发者调试面板 -->
+        <div class="dev-panel" id="devPanel" style="display: none;">
+            <div class="dev-panel-header">
+                <h3><i class="fas fa-bug"></i> 开发者调试面板</h3>
+                <button class="dev-panel-close" id="devPanelClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="dev-panel-content">
+                <div class="debug-tabs">
+                    <button class="debug-tab active" data-tab="overview">概览</button>
+                    <button class="debug-tab" data-tab="llm">LLM调用</button>
+                    <button class="debug-tab" data-tab="emotion">情感分析</button>
+                    <button class="debug-tab" data-tab="time">时间分析</button>
+                    <button class="debug-tab" data-tab="voice">语音合成</button>
+                </div>
+                <div class="debug-content">
+                    <div class="debug-section active" id="debug-overview">
+                        <div class="debug-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">总对话轮次:</span>
+                                <span class="stat-value" id="totalConversations">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">平均响应时间:</span>
+                                <span class="stat-value" id="avgResponseTime">0ms</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">语音合成成功率:</span>
+                                <span class="stat-value" id="voiceSuccessRate">0%</span>
+                            </div>
+                        </div>
+                        <div class="ai-emotion-status">
+                            <h4><i class="fas fa-heart"></i> AI情感状况</h4>
+                            <div class="emotion-display">
+                                <div class="emotion-item">
+                                    <span class="emotion-label">当前主要情感:</span>
+                                    <span class="emotion-value" id="currentEmotion">中性</span>
+                                    <span class="emotion-intensity" id="emotionIntensity">50%</span>
+                                </div>
+                                <div class="emotion-item">
+                                    <span class="emotion-label">情感稳定性:</span>
+                                    <span class="emotion-value" id="emotionStability">稳定</span>
+                                </div>
+                                <div class="emotion-item">
+                                    <span class="emotion-label">最近变化:</span>
+                                    <span class="emotion-value" id="recentChange">无变化</span>
+                                </div>
+                            </div>
+                            <div class="emotion-chart">
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">快乐</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill happy" id="happyBar" style="width: 50%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="happyPercent">50%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">悲伤</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill sad" id="sadBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="sadPercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">愤怒</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill angry" id="angryBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="angryPercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">恐惧</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill fear" id="fearBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="fearPercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">惊讶</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill surprise" id="surpriseBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="surprisePercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">厌恶</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill disgust" id="disgustBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="disgustPercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">中性</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill neutral" id="neutralBar" style="width: 50%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="neutralPercent">50%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">兴奋</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill excited" id="excitedBar" style="width: 10%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="excitedPercent">10%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">平静</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill calm" id="calmBar" style="width: 15%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="calmPercent">15%</span>
+                                </div>
+                                <div class="emotion-bar">
+                                    <span class="emotion-name">困惑</span>
+                                    <div class="emotion-progress">
+                                        <div class="emotion-fill confused" id="confusedBar" style="width: 5%"></div>
+                                    </div>
+                                    <span class="emotion-percent" id="confusedPercent">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="debug-log" id="overviewLog"></div>
+                    </div>
+                    <div class="debug-section" id="debug-llm">
+                        <div class="debug-log" id="llmLog"></div>
+                    </div>
+                    <div class="debug-section" id="debug-emotion">
+                        <div class="debug-log" id="emotionLog"></div>
+                    </div>
+                    <div class="debug-section" id="debug-time">
+                        <div class="debug-log" id="timeLog"></div>
+                    </div>
+                    <div class="debug-section" id="debug-voice">
+                        <div class="debug-log" id="voiceLog"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- 聊天区域 -->
         <main class="chat-container">

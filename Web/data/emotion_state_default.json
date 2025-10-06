@@ -1,0 +1,561 @@
+{
+  "current_state": {
+    "primary_emotion": "surprise",
+    "intensity": 0.8096000000000001,
+    "emotions": {
+      "neutral": 0.5,
+      "happy": 0.1,
+      "sad": 0.1,
+      "angry": 0.1,
+      "fear": 0.1,
+      "surprise": 0.8568,
+      "disgust": 0.1,
+      "excited": 0.30640000000000006,
+      "calm": 0.1,
+      "confused": 0.6504000000000001
+    },
+    "timestamp": "2025-10-06T20:45:20.757047",
+    "context": {},
+    "last_update": "2025-10-06T20:48:48.765486",
+    "stability": 0.7
+  },
+  "emotion_history": [
+    {
+      "from_emotion": {
+        "primary_emotion": "neutral",
+        "intensity": 0.5,
+        "emotions": {
+          "neutral": 0.5
+        },
+        "timestamp": "2025-10-06T20:45:40.554738",
+        "context": {},
+        "last_update": "2025-10-06T20:45:40.554740",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:45:40.557697",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.5
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "neutral",
+        "intensity": 0.5516,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.23760000000000003,
+          "disgust": 0.1,
+          "excited": 0.1688,
+          "calm": 0.1,
+          "confused": 0.1688
+        },
+        "timestamp": "2025-10-06T20:45:58.420299",
+        "context": {},
+        "last_update": "2025-10-06T20:45:58.420301",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:45:58.421070",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.5516
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "neutral",
+        "intensity": 0.6032,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.30640000000000006,
+          "disgust": 0.1,
+          "excited": 0.1688,
+          "calm": 0.1,
+          "confused": 0.23760000000000003
+        },
+        "timestamp": "2025-10-06T20:46:14.264495",
+        "context": {},
+        "last_update": "2025-10-06T20:46:14.264496",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:46:14.265393",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.6032
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "neutral",
+        "intensity": 0.6547999999999999,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.44400000000000006,
+          "disgust": 0.1,
+          "excited": 0.23760000000000003,
+          "calm": 0.1,
+          "confused": 0.30640000000000006
+        },
+        "timestamp": "2025-10-06T20:46:50.306378",
+        "context": {},
+        "last_update": "2025-10-06T20:46:50.306379",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:46:50.307530",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.6547999999999999
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.6806,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.5128,
+          "disgust": 0.1,
+          "excited": 0.23760000000000003,
+          "calm": 0.1,
+          "confused": 0.3752000000000001
+        },
+        "timestamp": "2025-10-06T20:47:49.532680",
+        "context": {},
+        "last_update": "2025-10-06T20:47:49.532682",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:47:49.533636",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.6806
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.7322,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.6504000000000001,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.4440000000000001
+        },
+        "timestamp": "2025-10-06T20:48:08.174959",
+        "context": {},
+        "last_update": "2025-10-06T20:48:08.174962",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:48:08.177148",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.7322
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.758,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.7192000000000001,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.5128000000000001
+        },
+        "timestamp": "2025-10-06T20:48:23.751268",
+        "context": {},
+        "last_update": "2025-10-06T20:48:23.751269",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:48:23.752056",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.758
+    },
+    {
+      "from_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.7838,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.788,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.5816000000000001
+        },
+        "timestamp": "2025-10-06T20:48:48.764613",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.764615",
+        "stability": 0.7
+      },
+      "to_emotion": {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      "trigger": "user_input",
+      "transition_time": 0.0,
+      "timestamp": "2025-10-06T20:48:48.765490",
+      "to_intensity": 0.8096000000000001,
+      "from_intensity": 0.7838
+    }
+  ],
+  "emotion_profile": {
+    "user_id": "default",
+    "baseline_emotions": {},
+    "emotion_history": [
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      },
+      {
+        "primary_emotion": "surprise",
+        "intensity": 0.8096000000000001,
+        "emotions": {
+          "neutral": 0.5,
+          "happy": 0.1,
+          "sad": 0.1,
+          "angry": 0.1,
+          "fear": 0.1,
+          "surprise": 0.8568,
+          "disgust": 0.1,
+          "excited": 0.30640000000000006,
+          "calm": 0.1,
+          "confused": 0.6504000000000001
+        },
+        "timestamp": "2025-10-06T20:45:20.757047",
+        "context": {},
+        "last_update": "2025-10-06T20:48:48.765486",
+        "stability": 0.7
+      }
+    ],
+    "preferences": {},
+    "created_at": "2025-10-06T20:45:20.757297",
+    "updated_at": "2025-10-06T20:48:48.765491"
+  },
+  "last_save": "2025-10-06T20:48:48.765591"
+}
