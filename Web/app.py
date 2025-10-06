@@ -267,8 +267,14 @@ def chat():
                     
                     if tts_response.success and tts_response.output_file:
                         audio_id = str(uuid.uuid4())
+                        # 确保使用绝对路径
+                        audio_file_path = tts_response.output_file
+                        if not os.path.isabs(audio_file_path):
+                            # 如果是相对路径，则相对于项目根目录
+                            audio_file_path = os.path.join(project_root, audio_file_path)
+                        
                         audio_files[audio_id] = {
-                            'file_path': tts_response.output_file,
+                            'file_path': audio_file_path,
                             'created_at': datetime.now(),
                             'original_name': os.path.basename(tts_response.output_file),
                             'audio_size': tts_response.audio_size
